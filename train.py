@@ -151,7 +151,7 @@ def train(config):
         val_check_interval=config.val_check_interval,
         check_val_every_n_epoch=config.check_val_every_n_epoch,
         gradient_clip_val=config.gradient_clip_val,
-        precision=16,
+        precision=32,
         num_sanity_val_steps=0,
         logger=logger,
         callbacks=[lr_callback, checkpoint_callback, bar],
