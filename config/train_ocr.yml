@@ -17,7 +17,7 @@ learning_rate: 5e-5                # Lower LR to avoid overfitting
 weight_decay: 0.01
 check_val_every_n_epochs: 1
 gradient_clip_val: 1.0
-
+seed: 2022
 val_check_interval: 1.0
 exp_name: "simpletext"
 exp_version: "v001"
