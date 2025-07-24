@@ -8,6 +8,8 @@ val_batch_sizes: [8]
 max_epochs: 15                  # 8–12 epochs are ideal for small datasets :contentReference[oaicite:4]{index=4}
 max_steps: -1                      # Use epoch-based training
 max_length: 64
+align_long_axis: True
+num_nodes: 1
 num_training_samples_per_epoch: 1500
 input_size: [1280, 960]            # Default size for Donut
 warmup_steps: 200                  # Shorter warmup on small dataset
@@ -15,6 +17,8 @@ learning_rate: 5e-5                # Lower LR to avoid overfitting
 weight_decay: 0.01
 check_val_every_n_epochs: 1
 gradient_clip_val: 1.0
+
+val_check_interval: 1.0
 exp_name: "simpletext"
 exp_version: "v001"
 num_workers: 8
