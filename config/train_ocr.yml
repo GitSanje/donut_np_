@@ -3,8 +3,8 @@ result_path: "./result"
 pretrained_model_name_or_path: "naver-clova-ix/donut-base"
 dataset_name_or_paths: "../dataset/synthesize_npdata"
 sort_json_key: True
-train_batch_sizes: [4]             # Increase to speed up training if GPU allows
-val_batch_sizes: [4]
+train_batch_sizes: [2]             # Increase to speed up training if GPU allows
+val_batch_sizes: [2]
 max_epochs: 15                  # 8–12 epochs are ideal for small datasets :contentReference[oaicite:4]{index=4}
 max_steps: -1                      # Use epoch-based training
 max_length: 64
