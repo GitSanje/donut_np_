@@ -13,12 +13,13 @@ num_nodes: 1
 num_training_samples_per_epoch: 1500
 input_size: [1280, 960]            # Default size for Donut
 warmup_steps: 200                  # Shorter warmup on small dataset
-learning_rate: 5e-5                # Lower LR to avoid overfitting
+lr: 5e-5                # Lower LR to avoid overfitting
 weight_decay: 0.01
 check_val_every_n_epochs: 1
 gradient_clip_val: 1.0
 seed: 2022
 val_check_interval: 1.0
+check_val_every_n_epoch: 1
 exp_name: "simpletext"
 exp_version: "v001"
 num_workers: 8
