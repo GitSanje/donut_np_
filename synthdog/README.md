@@ -60,4 +60,7 @@ synthtiger -o {dataset_path} -c {num_of_data} -w {num_of_workers} -v template.py
 
 # korean
 synthtiger -o {dataset_path} -c {num_of_data} -w {num_of_workers} -v template.py SynthDoG config_ko.yaml
+
+# nepali
+synthtiger -o synthesize_npdata -c 1500 -w 4 -v template.py SynthDoG config_np.yaml
 ```

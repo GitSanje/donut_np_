@@ -3,15 +3,15 @@ result_path: "./result"
 pretrained_model_name_or_path: "naver-clova-ix/donut-base"
 dataset_name_or_paths: "../dataset/synthesize_npdata"
 sort_json_key: True
-train_batch_sizes: [2]             # Increase to speed up training if GPU allows
-val_batch_sizes: [2]
+train_batch_sizes: [1]             # Increase to speed up training if GPU allows
+val_batch_sizes: [1]
 max_epochs: 15                  # 8–12 epochs are ideal for small datasets :contentReference[oaicite:4]{index=4}
 max_steps: -1                      # Use epoch-based training
 max_length: 64
 align_long_axis: True
 num_nodes: 1
 num_training_samples_per_epoch: 1500
-input_size: [1280, 960]            # Default size for Donut
+input_size: [640, 480]          # Default size for Donut
 warmup_steps: 200                  # Shorter warmup on small dataset
 lr: 2e-5              # Lower LR to avoid overfitting
 weight_decay: 0.01

@@ -155,6 +155,7 @@ def train(config):
         num_sanity_val_steps=0,
         logger=logger,
         callbacks=[lr_callback, checkpoint_callback, bar],
+        accumulate_grad_batches=4
     )
 
     trainer.fit(model_module, data_module, ckpt_path=config.get("resume_from_checkpoint_path", None))
